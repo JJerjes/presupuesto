@@ -2,194 +2,203 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Propuesta Digital - Empresa Quispe</title>
-  <link rel="stylesheet" href="styles/style.css">
-  <script src="scripts/script.js" defer></script>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    /* Reset básico */
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
 
-    header {
-      background-color: #003366;
-      color: #fff;
-      padding: 1rem;
-      text-align: center;
-      font-size: 1.5rem;
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+      padding: 20px;
     }
 
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    /* Barra de menú */
     nav {
-      background-color: #005599;
+      background-color: #0073e6;
       display: flex;
       justify-content: center;
-      padding: 0.5rem;
+      margin-bottom: 25px;
+      border-radius: 8px;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 1rem;
+      padding: 14px 25px;
       font-weight: bold;
+      transition: background-color 0.3s ease;
+      border-radius: 6px;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      background-color: #005bb5;
     }
 
     main {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
     section {
-      margin-bottom: 2rem;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #004080;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #0073e6;
+      padding-bottom: 6px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 15px;
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
+      margin-top: 10px;
     }
 
-    table, th, td {
-      border: 1px solid #ccc;
-    }
-
-    th, td {
-      padding: 10px;
+    table th, table td {
+      border: 1px solid #ddd;
+      padding: 8px;
       text-align: left;
     }
 
-    footer {
-      background-color: #003366;
+    table th {
+      background-color: #0073e6;
       color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
     }
 
-    .example-link {
-      color: #0066cc;
-      font-weight: bold;
+    a.example-link {
+      color: #0073e6;
+      text-decoration: underline;
+      word-break: break-all;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    /* Responsive */
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        padding: 12px;
+        border-radius: 0;
+        border-bottom: 1px solid #005bb5;
+      }
+
+      nav a:last-child {
+        border-bottom: none;
+      }
+
+      main {
+        padding: 15px 20px;
+      }
     }
   </style>
 </head>
 <body>
+  <header>Propuesta Digital para EMPRESA QUISPE</header>
 
-  <header>
-    Propuesta Digital para EMPRESA QUISPE
-  </header>
-
-  <!-- Barra de navegación -->
   <nav>
-    <a href="#presentacion">Presentaciones</a>
-    <a href="#futuro">Pensando en el futuro</a>
-    <a href="#beneficios">Beneficios de la página web</a>
+    <a href="#presentacion">Presentación</a>
+    <a href="#propuesta">Propuesta</a>
+    <a href="#beneficios">Beneficios</a>
+    <a href="#futuro">Pensando en Futuro</a>
   </nav>
 
   <main>
     <section id="presentacion">
-      <h2>1. Desarrollo de la Página Web</h2>
-      <ul>
-        <li>Diseño profesional y personalizado.</li>
-        <li>Catálogo digital con productos y precios actualizados.</li>
-        <li>Integración con WhatsApp, cotizaciones y facturación virtual.</li>
-        <li>Pruebas y entrega final lista para usar.</li>
-      </ul>
-      <p><strong>Tiempo estimado:</strong> 4 a 5 semanas.</p>
-      <p><strong>Costo sugerido:</strong> s/ 3500.00</p>
+      <h2>Presentación</h2>
+      <p>
+        Estimado(a) representante de <strong>EMPRESA QUISPE</strong>,<br />
+        Mi nombre es Jerjes Mariluz, desarrollador web y especialista en soluciones tecnológicas aplicadas a empresas industriales. He preparado esta propuesta para modernizar y optimizar la forma en que su empresa accede a repuestos, filtros, aceites y productos técnicos.
+      </p>
+      <p>
+        El objetivo es claro: recuperar la confianza comercial, ofreciendo una experiencia más ágil, segura, clara y profesional.
+      </p>
     </section>
 
-    <section>
-      <h2>2. Viajes y Reuniones Presenciales</h2>
-      <p><strong>Incluye:</strong> Visitas para diagnóstico, presentaciones y reuniones con clientes.</p>
-    </section>
+    <section id="propuesta">
+      <h2>Propuesta Digital</h2>
+      <ol>
+        <li>
+          <strong>Desarrollo de la Página Web</strong><br />
+          Diseño profesional, catálogo digital con productos y precios, integración con WhatsApp, cotizaciones y facturación virtual. Tiempo estimado: 3-4 semanas. Costo sugerido: S/3500.00
+        </li>
+        <li>
+          <strong>Viajes y Reuniones Presenciales</strong><br />
+          Visitas para diagnóstico, presentaciones y reuniones con clientes para adaptar la solución.
+        </li>
+        <li>
+          <strong>Servicio de Gestión Digital y Atención</strong><br />
+          Respuesta a consultas, gestión de pedidos, actualización de catálogo y soporte técnico.
+        </li>
+        <li>
+          <strong>Hosting, Dominio y Correos</strong><br />
+          Hosting confiable ($5-$15 USD/mes), dominio personalizado ($10-$20 USD/año), correos profesionales (ventas@empresaquispe.com).
+        </li>
+      </ol>
 
-    <section>
-      <h2>3. Servicio de Gestión Digital y Atención</h2>
-      <ul>
-        <li>Atención vía WhatsApp y web.</li>
-        <li>Gestión de pedidos y seguimiento.</li>
-        <li>Actualización de catálogo y promociones.</li>
-        <li>Soporte técnico continuo.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>4. Hosting, Dominio y Correos</h2>
-      <ul>
-        <li>Hosting: $5 - $15 USD/mes.</li>
-        <li>Dominio personalizado: $10 - $20 USD/año.</li>
-        <li>Correos corporativos: ventas@empresaquispe.com</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Ejemplos de Página Real de Repuestos en Perú</h2>
-      <a href="https://costagreen.com.pe/" target="_blank" class="example-link">www.costagreen.com.pe/</a>
-      <p><em>Sitios como este muestran productos, contacto y catálogos actualizados.</em></p>
-    </section>
-
-    <section>
-      <h2>Resumen de Costos y Tiempo</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Etapa</th>
-            <th>Tiempo</th>
-            <th>Costo</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Desarrollo Web</td>
-            <td>3-4 semanas</td>
-            <td>s/ 3500.00</td>
-          </tr>
-          <tr>
-            <td>Viajes</td>
-            <td>Según necesidad</td>
-            <td>Por día + gastos</td>
-          </tr>
-          <tr>
-            <td>Dominio y Hosting</td>
-            <td>Continuo</td>
-            <td>USD $20 a $30 anual</td>
-          </tr>
-        </tbody>
-      </table>
+      <h3>Ejemplos de páginas reales peruanas de repuestos</h3>
+      <p>Para que vea el potencial, algunos ejemplos:</p>
+      <a href="https://www.minenet.com.pe/" target="_blank" class="example-link">https://www.minenet.com.pe/</a>
     </section>
 
     <section id="beneficios">
-      <h2>✨ Beneficios de tener una Página Web</h2>
+      <h2>Beneficios de la Página Web para su Empresa</h2>
       <ul>
-        <li><strong>Visibilidad 24/7:</strong> Tus productos están disponibles para consulta todo el tiempo, sin necesidad de atención física.</li>
-        <li><strong>Mejor atención al cliente:</strong> A través del botón de WhatsApp o formulario, los interesados pueden cotizar fácil y rápido.</li>
-        <li><strong>Confianza y profesionalismo:</strong> Tener una web da una imagen seria ante otras empresas, especialmente mineras.</li>
-        <li><strong>Ahorro de tiempo:</strong> El cliente ve lo que necesita sin llamar o escribir primero.</li>
-        <li><strong>Organización de información:</strong> Puedes mostrar fotos, fichas técnicas, precios referenciales y garantías en un solo lugar.</li>
-        <li><strong>Más ventas potenciales:</strong> Al tener presencia digital, nuevas empresas también te pueden contactar.</li>
-        <li><strong>Automatización:</strong> Cotizaciones por PDF, historial de pedidos y hasta seguimiento de entregas futuras.</li>
+        <li><strong>Mejora la imagen profesional:</strong> Su empresa mostrará ser moderna y confiable ante sus clientes.</li>
+        <li><strong>Disponibilidad 24/7:</strong> Los clientes podrán consultar productos y precios en cualquier momento, sin depender de horarios.</li>
+        <li><strong>Facilita el proceso de compra:</strong> Solicitudes de cotización y pedidos más rápidos y ordenados.</li>
+        <li><strong>Genera confianza:</strong> Con facturación electrónica y soporte transparente, reduce errores y dudas.</li>
+        <li><strong>Mejora la comunicación:</strong> Integración directa con WhatsApp para consultas inmediatas.</li>
+        <li><strong>Ahorra tiempo y costos:</strong> Menos desplazamientos y llamadas innecesarias.</li>
       </ul>
     </section>
 
     <section id="futuro">
-      <h2>🎯 Pensando en el Futuro</h2>
-      <ul>
-        <li>Base de datos para registrar historial de cotizaciones por RUC.</li>
-        <li>Sistema de puntos o recompensas para empresas frecuentes.</li>
-        <li>Campañas por fechas importantes con descuentos o regalos.</li>
-        <li>Canastas o eventos familiares como agradecimiento a clientes fieles.</li>
-        <li>Actualización mensual del catálogo según temporada o novedades.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>¿Preguntas o Comentarios?</h2>
-      <p>Estoy aquí para apoyar y explicar cada detalle. ¡Juntos llevaremos su negocio a otro nivel!</p>
+      <h2>Pensando en el Futuro</h2>
+      <p>
+        En etapas posteriores, se podrá integrar un sistema de historial con base de datos para conocer el comportamiento de compra de sus clientes, automatizar cotizaciones, generar reportes y brindar un servicio aún más personalizado y eficiente.
+      </p>
+      <p>
+        También se podrán implementar programas de fidelidad, promociones personalizadas, y una plataforma de soporte técnico online para maximizar la satisfacción del cliente.
+      </p>
     </section>
   </main>
 
@@ -198,6 +207,7 @@
   </footer>
 
   <script>
+    // Actualiza año en footer
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
